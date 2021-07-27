@@ -1,0 +1,13 @@
+const Discord = require('discord.js');
+const { default_prefix } = require('../../config.json')
+
+module.exports = {
+  name: "",
+  aliases: [""],
+  description: "",
+
+  async run(client, message, args) {
+
+    
+  }
+}

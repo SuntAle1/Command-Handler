@@ -1,0 +1,50 @@
+Hello!
+You can find me on discord: Sunt Ale#4933
+Lets get to work!
+Btw i made this on replit so if you are coding on anything else where people cant see your code, such as vs code, etc. you dont need to have |process.env.token| just put your token there and make sure its between |""|!
+
+first of all, if you dont want to use mongo database, go ahead and remove lines 18-28.
+if you want to use the mongo database, i suggest you go and watch an youtube video!
+also go to the |config.json| file and put your bot prefix there!
+so lets begin coding!
+
+1. Dont create a file outside of the |commands| folder that will have |.js| at the end because it will not work!
+2. When you create a file in |commands| foler, make sure you put |.js| at the end. for example: help.js, ping.js, etc.
+3. You can create other folders in the |commands| folder, so its easier to find the command you are looking for!
+4. Yhen you create a file, that has |.js| at the end and its in a folder in the |commands| folder, than go to the |beginning| file and do |ctrl+a|, than |ctrl+c| to copy all that and put it in the file that you created! fill in the |''| in the: |name|, |description| and if you want the |aliases|! than put your code before the first |}| or it will not work!
+
+alright now that we know  how to make the files and where to put them, lets learn a bit about coding!
+
+1. There are packages that you can use, and most of them wil make your work easier! Just search on google: |npm <package>| and replace the |<package>| with the name of the package you want to use!
+
+lets learn about embeds!
+
+1. first lets define the embed: 
+
+const embed = new Discord.MessageEmbed()
+
+2. now lets see all the options that we can put in the embed!
+
+.setTitle('')
+.setDescription('')
+.setAuthor('')
+.addField('', '')
+.setColor('')
+.setThumbnail()
+.setTimestamp()
+
+after you chose wich of those to put in your embed, it should look something like this:
+
+let embed = new Discord.MessageEmbed()
+.setTitle('This is the embed title!')
+.setDescription('This is the embed description!')
+.setColor('RANDOM') //make sure its with caps or it wont work!
+.setFooter('Hello!')
+.setTimesamp()
+messge.channel.send(embed)
+
+alright! now if you want to see when someone uses a command, make sure you put after the code, but before the first |}| the following: |console.log('<command name> used!')| and if you want it to show even the person that used the command, do |console.log(`<command name> used by ${message.author.tag}!`)|
+
+this was the mini tutorial!
+if you need help, or you find any errors in the code, just dm me on discord!
+|||Sunt Ale#4933|||
